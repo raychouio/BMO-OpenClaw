@@ -99,6 +99,32 @@
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
       }
+    },
+    {
+      "id": "13cec6e7-94cd-4dd0-a96e-077465ff41b4",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Daily OpenClaw + Notes backup",
+      "enabled": true,
+      "createdAtMs": 1774761217568,
+      "updatedAtMs": 1774761217568,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run /home/raymond/.openclaw/backup.sh and report if anything was backed up or if there were no changes."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774818000000
+      }
     }
   ]
 }
