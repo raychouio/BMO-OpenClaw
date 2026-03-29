@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "f273c521-c27e-4423-b3f9-cf20e5b45592",
+      "name": "5pm - Don't Overeat Reminder",
+      "enabled": true,
+      "createdAtMs": 1774634979314,
+      "updatedAtMs": 1774753135087,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 17 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Raymond, it's 5pm and it's time for your daily reminder to NOT overeat. channel your inner Michael Scott. Generate exactly ONE short, funny, original joke or taunt in the style of The Office TV show (1-3 sentences max) about not eating too much at dinner. Think: awkward, cringy, deadpan energy, weirdly specific observations, unnecessary elaboration. Make it original and different every time. End with an emoji. Examples of good Office-style responses: 'I have achieved a level of personal weakness that I did not know was possible. I ate a whole bag of chips. For research.', 'You know what they say - the only thing worse than being on a diet is explaining to your doctor why you are on a diet.', ' Dwight wanted me to tell you that second helpings are for people with no boundaries. I agree. '"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "1609020768"
+      },
+      "state": {
+        "nextRunAtMs": 1774828800000,
+        "lastRunAtMs": 1774742400007,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 109593,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "2053a47d-c7ec-4bcf-8761-96bae4406023",
+      "name": "8pm - Don't Snack Reminder",
+      "enabled": true,
+      "createdAtMs": 1774634989087,
+      "updatedAtMs": 1774753423679,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Raymond, it's 8pm and it's time for your daily reminder to NOT snack at night. Generate exactly ONE short, funny, original joke or taunt in the style of The Office TV show (1-3 sentences max) about not eating late-night snacks. Think: awkward, cringy, deadpan energy, weirdly specific observations, unnecessary elaboration, Jim's sarcasm, Dwight's weird certainty. Make it original and different every time. End with an emoji. Examples of good Office-style responses: 'I am not being weird. I am being efficient. That is completely different.', ' Fun fact: the calories you eat after 8pm do not count. That is a scientific fact. I read it on the internet. Dwight confirmed it.', ' Sometimes I start a sentence I do not even know where it is going. I just hope I find it along the way. Like this snack. It found me. No.', '"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "1609020768"
+      },
+      "state": {
+        "nextRunAtMs": 1774839600000,
+        "lastRunAtMs": 1774753200006,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 223673,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "e1116710-71ce-4dbe-82be-687023d89ca3",
+      "name": "San Diego Weekend Events for Kids",
+      "enabled": true,
+      "createdAtMs": 1774637430265,
+      "updatedAtMs": 1774638208536,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * 5",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Search the web for kid-friendly events and activities in San Diego for this weekend (Saturday and Sunday). Look for things like: kids festivals, family activities, museum events, nature activities, Disney/Hello Kitty events, public events, community gatherings, etc. Return a concise list of the best options found with brief descriptions, locations, and any relevant costs or registration info. Make it useful for a family with young kids (ages 1-4). Prioritize free or low-cost options."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "1609020768"
+      },
+      "state": {
+        "nextRunAtMs": 1775242800000,
+        "lastRunAtMs": 1774638000005,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 208531,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}

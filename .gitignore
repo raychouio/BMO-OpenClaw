@@ -1,0 +1,13 @@
+agents/
+canvas/
+completions/
+credentials/
+cron/runs
+cron/jobs.json.*
+devices/
+identity/
+logs/
+openclaw.json.*
+
+exec-approvals.json
+update-check.json
