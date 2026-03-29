@@ -13,4 +13,4 @@ exec-approvals.json
 update-check.json
 
 # Workspace has its own git repo (nested .git)
-workspace/.git
+workspace
