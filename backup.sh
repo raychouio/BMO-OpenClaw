@@ -8,8 +8,8 @@ echo "=== $(date '+%Y-%m-%d %H:%M UTC') ==="
 # --- Backup ~/.openclaw (main config & memories) ---
 cd "$HOME/.openclaw"
 
-# Pull latest changes first
-git pull --rebase origin main
+# Pull latest; on merge conflicts, prefer origin/main (-X theirs)
+git pull -X theirs origin main
 
 # Check for changes (excluding workspace since it has its own git)
 if git diff --quiet && git diff --cached --quiet && ! git status --porcelain | grep -v "^??.*workspace" | grep -q .; then
@@ -25,8 +25,8 @@ fi
 if [ -d "$HOME/projects/notes/.git" ]; then
     cd "$HOME/projects/notes"
 
-    # Pull latest changes first
-    git pull --rebase origin main
+    # Pull latest; on merge conflicts, prefer origin/main (-X theirs)
+    git pull -X theirs origin main
 
     if ! git diff --quiet || ! git diff --cached --quiet || git status --porcelain | grep -q .; then
         git add -A
