@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "gws-calendar": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "dd7299b62e3ce9fb1996548a3238ca33e24f3958a06f89d0e1f5f7b8c828aad5"
+    },
+    "gws-gmail": {
+      "source": "googleworkspace/cli",
+      "sourceType": "github",
+      "computedHash": "9baa9653ac375cd6af69106796fa1ff06f3e15ea32a09a5bb8073a6ca67f9f77"
+    }
+  }
+}
