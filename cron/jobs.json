@@ -72,7 +72,7 @@
       "name": "San Diego Weekend Events for Kids",
       "enabled": true,
       "createdAtMs": 1774637430265,
-      "updatedAtMs": 1774638208536,
+      "updatedAtMs": 1774762017115,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * 5",
@@ -82,7 +82,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Search the web for kid-friendly events and activities in San Diego for this weekend (Saturday and Sunday). Look for things like: kids festivals, family activities, museum events, nature activities, Disney/Hello Kitty events, public events, community gatherings, etc. Return a concise list of the best options found with brief descriptions, locations, and any relevant costs or registration info. Make it useful for a family with young kids (ages 1-4). Prioritize free or low-cost options."
+        "message": "Raymond, it's Friday and it's time to find kid-friendly weekend events in San Diego AND add them to the family Google Calendar 'Ohana Suggestions'.\n\nStep 1: Search the web for this weekend's kid-friendly events in San Diego (Saturday and Sunday). Focus on: kids festivals, family activities, museum events, nature activities, Disney/Hello Kitty events, public events, community gatherings. Prioritize free/low-cost options for families with young kids (ages 1-4).\n\nStep 2: Take the top 3-5 best events found and create Google Calendar entries for BOTH Saturday AND Sunday in the 'Ohana Suggestions' calendar. Use the calendar ID: 0a2b9ef123aed82993ef4b760cd766398a4c95c6b9d687b8cd968ceb27739c12@group.calendar.google.com\n\nUse gws calendar events insert with --calendar-id flag to create each event. For each event include:\n- A clear event title with '🎈' or '🎪' or '🌟' emoji prefix based on event type\n- The location\n- Start and end times (use reasonable times like 10am-12pm or 2pm-5pm depending on event type)\n- A description with the source URL\n\nStep 3: After creating the calendar events, send Raymond a brief Telegram message summarizing what was found and added to the calendar. List each event with its day (Sat/Sun), time, location, and brief description.\n\nIMPORTANT: \n- Only create events that actually exist (don't make up fake events)\n- If you cannot verify an event exists, skip it\n- Use --description to add source URL to each event\n- Confirm before creating events"
       },
       "delivery": {
         "mode": "announce",
