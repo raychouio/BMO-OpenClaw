@@ -6,7 +6,7 @@
       "name": "5pm - Don't Overeat Reminder",
       "enabled": true,
       "createdAtMs": 1774634979314,
-      "updatedAtMs": 1774753135087,
+      "updatedAtMs": 1774829005744,
       "schedule": {
         "kind": "cron",
         "expr": "0 17 * * *",
@@ -24,11 +24,11 @@
         "to": "1609020768"
       },
       "state": {
-        "nextRunAtMs": 1774828800000,
-        "lastRunAtMs": 1774742400007,
+        "nextRunAtMs": 1774915200000,
+        "lastRunAtMs": 1774828800006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 109593,
+        "lastDurationMs": 205738,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -39,7 +39,7 @@
       "name": "8pm - Don't Snack Reminder",
       "enabled": true,
       "createdAtMs": 1774634989087,
-      "updatedAtMs": 1774753423679,
+      "updatedAtMs": 1774839611190,
       "schedule": {
         "kind": "cron",
         "expr": "0 20 * * *",
@@ -49,7 +49,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Raymond, it's 8pm and it's time for your daily reminder to NOT snack at night. Generate exactly ONE short, angry, and hilarious rant in the style of comedian Bill Burr (1-3 sentences max) about why snacking late at night is for losers. Think: high-pitched disbelief, aggressive common sense, mocking 'self-care' culture, and wondering why you're 'stuffing your face like a shut-in' while the sun is down. Make it original and different every time. End with an emoji."
+        "message": "Raymond, it’s 8:00 PM in a dying republic and you’re eyeing the pantry like it’s a subprime mortgage in 2008. Put the crackers down, go sit in the dark, and think about the fact that your ancestors hunted mammoths while you’re currently losing a psychological war to a bag of processed corn chips. It’s a literal nightmare."
       },
       "delivery": {
         "mode": "announce",
@@ -57,11 +57,11 @@
         "to": "1609020768"
       },
       "state": {
-        "nextRunAtMs": 1774839600000,
-        "lastRunAtMs": 1774753200006,
+        "nextRunAtMs": 1774926000000,
+        "lastRunAtMs": 1774839600004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 223673,
+        "lastDurationMs": 11186,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -107,7 +107,7 @@
       "name": "Daily OpenClaw + Notes backup",
       "enabled": true,
       "createdAtMs": 1774761217568,
-      "updatedAtMs": 1774761217568,
+      "updatedAtMs": 1774818195149,
       "schedule": {
         "kind": "cron",
         "expr": "0 14 * * *",
@@ -123,8 +123,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774818000000,
-        "runningAtMs": 1774818000001
+        "nextRunAtMs": 1774904400000,
+        "lastRunAtMs": 1774818000006,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 195143,
+        "lastError": "Error: Telegram recipient @heartbeat could not be resolved to a numeric chat ID (Call to 'getChat' failed! (400: Bad Request: chat not found))",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     }
   ]
