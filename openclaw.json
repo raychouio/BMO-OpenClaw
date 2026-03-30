@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.24",
-    "lastTouchedAt": "2026-03-28T01:41:19.358Z"
+    "lastTouchedAt": "2026-03-30T05:41:18.080Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-27T17:50:30.391Z",
@@ -849,7 +849,13 @@
         "vercel-ai-gateway/minimax/minimax-m2.7": {},
         "vercel-ai-gateway/minimax/minimax-m2.7-highspeed": {}
       },
-      "workspace": "/home/raymond/.openclaw/workspace"
+      "workspace": "/home/raymond/.openclaw/workspace",
+      "sandbox": {
+        "mode": "non-main",
+        "browser": {
+          "autoStart": true
+        }
+      }
     }
   },
   "tools": {
@@ -858,6 +864,13 @@
       "search": {
         "enabled": true,
         "provider": "duckduckgo"
+      }
+    },
+    "sandbox": {
+      "tools": {
+        "allow": [
+          "browser"
+        ]
       }
     }
   },

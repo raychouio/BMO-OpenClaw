@@ -1,0 +1,15 @@
+{
+  "entries": [
+    {
+      "containerName": "openclaw-sbx-agent-main-f331f052",
+      "backendId": "docker",
+      "runtimeLabel": "openclaw-sbx-agent-main-f331f052",
+      "sessionKey": "agent:main",
+      "createdAtMs": 1774850233457,
+      "lastUsedAtMs": 1774850573201,
+      "image": "openclaw-sandbox:bookworm-slim",
+      "configLabelKind": "Image",
+      "configHash": "3a439d3d4424f6d821ab13e4957416daeb539207135f8b9ebce08b612b24c2a2"
+    }
+  ]
+}
